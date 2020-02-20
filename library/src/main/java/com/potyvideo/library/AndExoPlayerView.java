@@ -354,6 +354,7 @@ public class AndExoPlayerView extends LinearLayout implements View.OnClickListen
 
     public long getCurrenPosition() {
         if (simpleExoPlayer != null) {
+            
             return playbackPosition = simpleExoPlayer.getCurrentPosition();
         }
         return 0;
