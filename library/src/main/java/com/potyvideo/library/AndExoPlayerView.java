@@ -346,6 +346,7 @@ public class AndExoPlayerView extends LinearLayout implements View.OnClickListen
             playbackPosition = simpleExoPlayer.getCurrentPosition();
             currentWindow = simpleExoPlayer.getCurrentWindowIndex();
             currPlayWhenReady = simpleExoPlayer.getPlayWhenReady();
+            simpleExoPlayer.set
             simpleExoPlayer.removeListener(componentListener);
             simpleExoPlayer.release();
             simpleExoPlayer = null;
@@ -354,10 +355,18 @@ public class AndExoPlayerView extends LinearLayout implements View.OnClickListen
 
     public long getCurrenPosition() {
         if (simpleExoPlayer != null) {
-            
+
             return playbackPosition = simpleExoPlayer.getCurrentPosition();
         }
         return 0;
+    }
+
+    public void setCurrenPosition(Long position) {
+        if (simpleExoPlayer != null) {
+
+             simpleExoPlayer.seekTo(position);
+        }
+
     }
 
     public void setPlayWhenReady(boolean playWhenReady) {
