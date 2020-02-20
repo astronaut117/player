@@ -352,6 +352,13 @@ public class AndExoPlayerView extends LinearLayout implements View.OnClickListen
         }
     }
 
+    public long getCurrenPosition() {
+        if (simpleExoPlayer != null) {
+            return playbackPosition = simpleExoPlayer.getCurrentPosition();
+        }
+        return 0;
+    }
+
     public void setPlayWhenReady(boolean playWhenReady) {
         this.currPlayWhenReady = playWhenReady;
         if (simpleExoPlayer != null)
