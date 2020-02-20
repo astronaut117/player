@@ -523,19 +523,19 @@ public class AndExoPlayerView extends LinearLayout implements View.OnClickListen
     private void enterFullScreen() {
 
 
-        imageViewExitFullScreen.setVisibility(VISIBLE);
+      /*  imageViewExitFullScreen.setVisibility(VISIBLE);
         imageViewEnterFullScreen.setVisibility(GONE);
 
         if (getActivity() != null)
-            getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+            getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);*/
     }
 
     private void exitFullScreen() {
-        imageViewExitFullScreen.setVisibility(GONE);
+     /*   imageViewExitFullScreen.setVisibility(GONE);
         imageViewEnterFullScreen.setVisibility(VISIBLE);
 
         if (getActivity() != null)
-            getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+            getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);*/
     }
 
     private void showProgress() {
