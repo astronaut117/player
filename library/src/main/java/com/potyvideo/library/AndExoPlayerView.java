@@ -69,8 +69,8 @@ public class AndExoPlayerView extends LinearLayout implements View.OnClickListen
     private EnumResizeMode currResizeMode = EnumResizeMode.FILL;
     private EnumAspectRatio currAspectRatio = EnumAspectRatio.ASPECT_16_9;
 
-    private SimpleExoPlayer simpleExoPlayer;
-    private PlayerView playerView;
+    public SimpleExoPlayer simpleExoPlayer;
+    public PlayerView playerView;
     private ComponentListener componentListener;
     private LinearLayout linearLayoutRetry, linearLayoutLoading;
     private AppCompatButton buttonRetry;
